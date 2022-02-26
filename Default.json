@@ -1,0 +1,87 @@
+{
+  "buttons": [
+    "html",
+    "formatting",
+    "bold",
+    "italic",
+    "unorderedlist",
+    "orderedlist",
+    "link",
+    "image",
+    "video"
+  ],
+  "plugins": [
+    "fullscreen",
+    "video",
+    "alignment",
+    "properties",
+    "specialchars",
+    "beyondgrammar",
+    "textdirection",
+    "variable",
+    "limiter",
+    "linkattr"
+  ],
+  "linkAttrs": [
+    {
+      "label": "Class",
+      "attr": "class",
+      "type": "enum",
+      "options": [
+        {
+          "name": "Primary Button",
+          "value": "button primary-button"
+        },
+        {
+          "name": "Secondary Button",
+          "value": "button secondary-button"
+        }
+      ]
+    }
+  ],
+  "formattingAdd": {
+    "main-title": {
+      "title": "Main Title",
+      "api": "module.block.format",
+      "args": {
+        "attr": {
+          "class": "main-title"
+        },
+        "type": "add"
+      }
+    },
+    "secondary-title": {
+      "title": "Secondary Title",
+      "api": "module.block.format",
+      "args": {
+        "attr": {
+          "class": "secondary-title"
+        },
+        "type": "add"
+      }
+    },
+    "open-modal-attr": {
+      "title": "Open Modal Attr",
+      "api": "module.block.format",
+      "args": {
+        "attr": {
+          "data-a11y-dialog-show": "modal-container"
+        },
+        "type": "toggle"
+      }
+    },
+    "remove-open-modal-attr": {
+      "title": "Remove Open Modal Attr",
+      "api": "module.block.format",
+      "args": {
+        "data-a11y-dialog-show": "modal-container",
+        "type": "remove"
+      }
+    }
+  },
+  "formattingHide": [
+    "h1"
+  ],
+  "linkNewTab": true,
+  "toolbarFixed": true
+}
