@@ -20,7 +20,8 @@
     "textdirection",
     "variable",
     "limiter",
-    "linkattr"
+    "linkattr",
+    "counter"
   ],
   "linkAttrs": [
     {
@@ -44,10 +45,11 @@
       "title": "Main Title",
       "api": "module.block.format",
       "args": {
+        "tag": "h2",
         "attr": {
-          "class": "main-title"
+          "class": "h1 main-title"
         },
-        "type": "add"
+        "type": "set"
       }
     },
     "secondary-title": {
@@ -75,6 +77,24 @@
       "api": "module.block.format",
       "args": {
         "data-a11y-dialog-show": "modal-container",
+        "type": "remove"
+      }
+    },
+    "small-text": {
+      "title": "Small Text",
+      "api": "module.block.format",
+      "args": {
+        "attr": {
+          "class": "text_small"
+        },
+        "add": "toogle"
+      }
+    },
+    "remove-small-text": {
+      "title": "Remove Small Text",
+      "api": "module.block.format",
+      "args": {
+        "class": "text_small",
         "type": "remove"
       }
     }

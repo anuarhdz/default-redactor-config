@@ -1,4 +1,8 @@
 # My personal Redactor Config - Craft CMS 3
 
-Include the files from this repository inside `config/redactor` in your Craft CMS 3 installation. 
+## Installation
+Include the files from this repository in the `config/redactor` directory of your Craft CMS 3 installation.
 
+## What is included?
+* Script `linkattr.js`, from the [Simplificate Web](https://github.com/simplicate-web/redactor-link-attr) repository. 
+* Default Redactor plugin configuration. 
